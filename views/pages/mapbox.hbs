@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="/styles.css" />
+  {{!--
+  <link rel="icon" href="/styles.css" /> --}}
+  <script src="/app.js"></script>
+</head>
+
+<body>
+  {{>header}}
+  {{>hero}}
+  <h2>{{title}}</h2>
+  <main>
+    <p>
+      This route retrieves and saves locally all the tiles within a bounding box set in the url query:</p>
+
+    <p><b>query params:</b></p>
+    <ul>
+      <li>n = north edge (lat)</li>
+      <li>s = south edge (lat)</li>
+      <li>e = east edge (lon)</li>
+      <li>w = west edge (lon)</li>
+      <li>z = zoom level as in mapbox (0-21)</li>
+      <li>t = type of map ( for example satellite, terrain-rgb)</li>
+    </ul>
+    <p>
+      <b>example of query:</b>
+    </p>
+    <p>http://localhost:6767/mapbox?n=28.61&e=-16.11&s=27.99&w=-16.93&z=2&t=terrain-rgb</p>
+
+    <p>Files are saved in './assets/{t}_{z}/' directory.</p>
+  </main>
+</body>
+
+</html>

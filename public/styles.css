@@ -1,0 +1,18 @@
+body {
+  margin: 0px;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+main {
+  max-width: 600px;
+}

@@ -1,0 +1,26 @@
+{
+	"name": "mapbox-server",
+	"version": "1.0.0",
+	"description": "Nodejs server to retrieve and stitch Mapbox tiles locally",
+	"main": "index.js",
+	"repository": {
+		"url": "https://github.com/finehance/mapbox-server"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "nodemon index.js -e js,hbs"
+	},
+	"keywords": [
+		"mapbox",
+		"tiles",
+		"server",
+		"api"
+	],
+	"author": "Karol Stopyra <karol.stopyra@gmail.com> (http://twitter.com/stopyransky)",
+	"license": "MIT",
+	"dependencies": {
+		"canvas": "2.7.0",
+		"express": "4.17.1",
+		"hbs": "4.1.1"
+	}
+}

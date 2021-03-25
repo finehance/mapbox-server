@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="/styles.css" />
+  {{!--
+  <link rel="icon" href="/styles.css" /> --}}
+  <script src="/app.js"></script>
+</head>
+
+<body>
+  {{>header}}
+  {{>hero}}
+  <h2>{{title}}</h2>
+  <main>
+
+    <p>
+      Calling this route allows to stitch together mapbox tiles
+      (/mapbox route needs to be called first to save the tiles)
+      and saves stiched file as one texture.
+    </p>
+
+    <p><b>query params:</b></p>
+    <ul>
+      <li>type = satellite or terrain-rgb (and other accepted mapbox types)</li>
+      <li>zoom = number, typically 0-21 describbing zoom</li>
+    </ul>
+    <p>
+      <b>example of query:</b>
+    </p>
+    <p>http://localhost:6767/texture?type=terrain-rgb&zoom=2</p>
+
+    <p>File is saved in './assets/' directory.</p>
+  </main>
+</body>
+
+</html>
